@@ -1,0 +1,251 @@
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+html,body {
+  background-color:#effafa;
+  font-family:sans-serif;
+}
+li {list-style: none;}
+.hero {
+  min-height:100dvh;
+  background:#1c1d25;
+  width:100%;
+  clip-path: polygon(0 0, 100% 0%, 100% 80%, 0% 100%);
+
+}
+.navbar {
+max-width:1500px;
+width:95%;
+margin-inline:auto;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.logo {
+  height:100px;
+  width:100px;
+  object-fit: cover;
+  border-radius:50%;
+  display: block;
+}
+.menu {
+  display: flex;
+}
+.menu li a {
+  text-decoration: none;
+  display: block;
+  font-family:Impact;
+  color:#f5f5f5;
+  padding:3rem 3.5rem;
+  letter-spacing:1px;
+  font-size:2rem;
+  transition:all 0.2s ease;
+}
+.menu li a:hover {
+  color:coral;
+}
+
+.info {
+max-width:1500px;
+width:95%;
+margin-inline:auto;
+margin-top:25vh;
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+
+}
+
+.one h1 {
+  font-family:'Segoe UI';
+  font-size:3.8rem;
+  color:#f5f5f5;
+  margin-bottom:2rem;
+}
+
+.one p {
+  margin-bottom:1.5rem;
+  font-family:'segoe UI';
+  color:#555;
+  font-size:1.2rem;
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  background:coral;
+  color:#fff;
+  font-size:1.2rem;
+  font-family:Arial;
+  padding:1rem 2rem;
+  margin-top:1rem;
+  transition:all 0.2s ease;
+}
+
+.btn:hover {
+  background:rgb(255, 170, 139);
+}
+.icon img {
+  height:300px;
+  width:300px;
+  display: inline-block;
+  object-fit: cover;
+  border-radius:50%;
+  box-shadow: 5px 0px 12px 3px rgb(39, 39, 39);
+
+}
+.uno {
+  position: relative;
+  left:6rem;
+}
+
+.projects {
+text-align: center;
+font-size:2rem;
+font-family:'Segoe UI';
+padding-top:295px;
+padding-bottom:205px;
+background: #f2fdff;  /* fallback for old browsers */
+
+
+
+margin-top:-295px;
+}
+
+.project-center {
+max-width:1500px;
+width:95%;
+margin-inline:auto;
+display: flex;
+justify-content: space-between;
+margin-block:2rem;
+flex-wrap: wrap;
+
+}
+
+.card {
+  height:300px;
+  width:calc(25% - 1rem);
+  background:#fff;
+  margin-bottom:2rem;
+  overflow: hidden;
+  box-shadow: 0px 5px 10px -5px rgba(167, 167, 167, 1);
+}
+
+.nxt {
+background:#1c1d25;
+clip-path: polygon(0 0, 100% 30%, 100% 100%, 0 100%);
+padding-top:255px;
+padding-bottom:2rem;
+margin-top:-145px;
+
+}
+.nxt h2 {
+  text-align: center;
+  font-size:3rem;
+  color:#fff;
+  margin-bottom:50px;
+}
+
+.project {
+  margin-bottom:4rem;
+  color:#333;
+  font-family:'Segoe UI';
+  font-size:2em;
+}
+
+.about-center {
+max-width:1500px;
+width:95%;
+margin-inline:auto;
+padding-inline:1rem;
+}
+
+.parham {
+  width:50%;
+  display: block;
+  object-fit: cover;
+  margin: 0 auto;
+}
+.about-img {
+  width:95%;
+  margin-inline:auto;
+}
+.about-info {
+  margin:2rem auto;
+  text-align: center;
+}
+.about-info h1 {
+  color:#f7f7f7;
+  margin-bottom:1rem;
+  font-family:sans-serif;
+  font-size:2.5rem;
+}
+.about-info p {
+  color:#555;
+  margin:.5rem auto;
+  font-family:Arial;
+  font-size:1.2rem;
+}
+
+.html {color:orange;}
+.css {color:aqua;}
+.javascript {color:yellow;}
+.html,.css,.javascript {font-weight:bold;}
+@media screen and (max-width:1100px)
+
+
+{
+  .ohoh {display: block; margin:2rem auto;}
+  .logo {height:200px; display: block; height:100px; width:100px;}
+  .menu {display: none;}
+  .info {flex-direction: column; align-items: center; margin-top:15vh;}
+  .info h1 {font-size:2rem;}
+  .uno {left:0;}
+  .icon {
+   display: none;
+  }
+.card {  width:90%; margin-inline:auto; max-width:400px; margin-bottom:0;}
+.project-center {flex-wrap:wrap; gap:2rem;}
+}
+.card {
+  position:relative;
+  z-index:1;
+  border-radius:.5rem;
+  transition:all 0.2s linear;
+}
+.card-background {
+  position:absolute;
+  width:100%;
+  height:100%;
+  top:0;
+  left:0;
+  z-index:-1;
+  object-fit: cover;
+  transition:all 0.2s linear;
+}
+.card:hover .card-background {
+  transform: scale(1.5);
+}
+.card-post {
+  background:#f7f7f7;
+  text-align: center;
+  padding:1rem;
+  position: absolute;
+  bottom:0;
+  width:100%;
+}
+.card-post h2 {font-size:2rem; color:#333; margin-bottom:.5rem;}
+.card-post p {font-size:1.2rem; color:#444;}
+.card:hover {box-shadow: 0px 10px 17px 1px rgba(28, 28, 66, 0.781); cursor: pointer;}
+
+
+@media screen and (min-width:1200px)
+{
+  .about-center {display: flex; justify-content: space-between;}
+  .parham {width:30%; margin:0;}
+  .about-info {align-self:center;}
+}
